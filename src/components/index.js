@@ -1,2 +1,3 @@
-export { Navbar } from './Navbar';
+export { Navigation } from './Navigation';
+export { Footer } from './Footer';
 export { Layout } from './Layout';

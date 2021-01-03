@@ -1,3 +1,7 @@
 {
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "editor.formatOnSave": true,
+    "prettier.trailingComma": "es5",
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 75
 }
