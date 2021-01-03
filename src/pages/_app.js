@@ -1,9 +1,9 @@
-import { GlobalStyle } from "../GlobalStyle";
+import { GlobalStyle } from '../GlobalStyle';
 
 const App = ({ Component, pageProps }) => (
     <>
-        <Component {...pageProps} />
         <GlobalStyle />
+        <Component {...pageProps} />
     </>
 );
 

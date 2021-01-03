@@ -1,10 +1,11 @@
-import { Navbar } from './Navbar';
+import { Navigation } from './Navigation';
+import { Footer } from './Footer';
 
-export const Layout = (props) => (
+export const Layout = props => (
     <>
-        <Navbar />
+        <Navigation />
         {props.children}
-        
+        <Footer />
         {/* Add a footer for example */}
     </>
 );

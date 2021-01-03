@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 import { colors } from './constants';
 
-
 export const GlobalStyle = createGlobalStyle`
     /* @font-face {
         font-family: 'Panton';
@@ -16,9 +15,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: 'poppins', 'system-ui','-apple-system','BlinkMacSystemFont','Segoe UI,Roboto','Helvetica Neue','Arial','Noto Sans','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        background-color: ${colors.whitePrimary};
         margin: 0;
         padding: 0;
+        font-family: 'poppins', 'system-ui','-apple-system','BlinkMacSystemFont','Segoe UI,Roboto','Helvetica Neue','Arial','Noto Sans','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -39,9 +39,16 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 14px;
     }
 
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
     a {
-        color: ${colors.grey};
         text-decoration: none;
+        color: ${colors.blackPrimary};
+        line-height: 0;
     }
 
     p {
@@ -51,4 +58,4 @@ export const GlobalStyle = createGlobalStyle`
     img {
         max-width: 100%;
     } 
-`; 
+`;
